@@ -1,0 +1,73 @@
+// 面包屑
+.mrz-breadcrumb {
+  &.el-breadcrumb {
+    .el-breadcrumb__item {
+      .el-breadcrumb__inner {
+        color: #4A90E2 !important;
+
+        &:hover {
+          color: #3C78C6 !important;
+        }
+
+        a {
+          color: #4A90E2 !important;
+
+          &:hover {
+            color: #3C78C6 !important;
+          }
+        }
+      }
+
+      .el-breadcrumb__separator {
+        color: #4A90E2 !important;
+      }
+
+      // 面包屑最后项
+      &:last-child {
+        .el-breadcrumb__inner {
+          color: black !important;
+
+          &:hover {
+            color: black !important;
+          }
+
+          a {
+            color: black !important;
+
+            &:hover {
+              color: black !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// 页头
+.mrz-page-header {
+  &.el-page-header {
+    .el-page-header__left {
+      .el-icon-back {
+        color: #4A90E2 !important;
+      }
+
+      &::after {
+        background-color: #4A90E2 !important;
+      }
+    }
+  }
+}
+
+// 标签页
+.mrz-tab {
+  &.el-tabs {
+    .el-tabs__active-bar {
+      color: #4A90E2 !important;
+    }
+
+    .is-active {
+      color: #4A90E2 !important;
+    }
+  }
+}

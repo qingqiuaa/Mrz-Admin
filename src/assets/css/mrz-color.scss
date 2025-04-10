@@ -1,0 +1,728 @@
+// 基础色调 SCSS 变量定义
+$mrz-white: #FFFFFF;                // 纯白
+$mrz-black: #000000;                // 纯黑
+$mrz-gray: #DDEEEE;                 // 灰色
+$mrz-primary: #4A90E2;              // 主要色
+$mrz-success: #5DBD84;              // 成功色
+$mrz-info: #56CFE1;                 // 信息色
+$mrz-warning: #FFAA4C;              // 警告色
+$mrz-danger: #FF6B6B;               // 危险色
+$mrz-primary-light-1: #ECF5FF;      // 次主要色1
+$mrz-primary-light-2: #A0CFFF;      // 次主要色2
+$mrz-success-light-1: #F0F9EB;      // 次成功色1
+$mrz-success-light-2: #B3E19D;      // 次成功色2
+$mrz-info-light-1: #F4F4F5;         // 次信息色1
+$mrz-info-light-2: #BCBEC2;         // 次信息色2
+$mrz-warning-light-1: #FEF6EC;      // 次警告色1
+$mrz-warning-light-2: #F0C78A;      // 次警告色2
+$mrz-danger-light-1: #FEF0F0;       // 次危险色1
+$mrz-danger-light-2: #FAB6B6;       // 次危险色2
+
+// 基础色调文字颜色样式
+.mrz-text-white {
+    color: $mrz-white;
+}
+
+.mrz-text-gray {
+    color: $mrz-gray;
+}
+
+.mrz-text-black {
+    color: $mrz-black;
+}
+
+.mrz-text-primary {
+    color: $mrz-primary;
+}
+
+.mrz-text-success {
+    color: $mrz-success;
+}
+
+.mrz-text-info {
+    color: $mrz-info;
+}
+
+.mrz-text-warning {
+    color: $mrz-warning;
+}
+
+.mrz-text-danger {
+    color: $mrz-danger;
+}
+
+.mrz-text-primary-light-1 {
+    color: $mrz-primary-light-1;
+}
+
+.mrz-text-primary-light-2 {
+    color: $mrz-primary-light-2;
+}
+
+.mrz-text-success-light-1 {
+    color: $mrz-success-light-1;
+}
+
+.mrz-text-success-light-2 {
+    color: $mrz-success-light-2;
+}
+
+.mrz-text-info-light-1 {
+    color: $mrz-info-light-1;
+}
+
+.mrz-text-info-light-2 {
+    color: $mrz-info-light-2;
+}
+
+.mrz-text-warning-light-1 {
+    color: $mrz-warning-light-1;
+}
+
+.mrz-text-warning-light-2 {
+    color: $mrz-warning-light-2;
+}
+
+.mrz-text-danger-light-1 {
+    color: $mrz-danger-light-1;
+}
+
+.mrz-text-danger-light-2 {
+    color: $mrz-danger-light-2;
+}
+
+// 基础色调背景颜色样式
+.mrz-bg-white {
+    background-color: $mrz-white;
+}
+
+.mrz-bg-gray {
+    background-color: $mrz-gray;
+}
+
+.mrz-bg-black {
+    background-color: $mrz-black;
+}
+
+.mrz-bg-primary {
+    background-color: $mrz-primary;
+}
+
+.mrz-bg-success {
+    background-color: $mrz-success;
+}
+
+.mrz-bg-info {
+    background-color: $mrz-info;
+}
+
+.mrz-bg-warning {
+    background-color: $mrz-warning;
+}
+
+.mrz-bg-danger {
+    background-color: $mrz-danger;
+}
+
+.mrz-bg-primary-light-1 {
+    background-color: $mrz-primary-light-1;
+}
+
+.mrz-bg-primary-light-2 {
+    background-color: $mrz-primary-light-2;
+}
+
+.mrz-bg-success-light-1 {
+    background-color: $mrz-success-light-1;
+}
+
+.mrz-bg-success-light-2 {
+    background-color: $mrz-success-light-2;
+}
+
+.mrz-bg-info-light-1 {
+    background-color: $mrz-info-light-1;
+}
+
+.mrz-bg-info-light-2 {
+    background-color: $mrz-info-light-2;
+}
+
+.mrz-bg-warning-light-1 {
+    background-color: $mrz-warning-light-1;
+}
+
+.mrz-bg-warning-light-2 {
+    background-color: $mrz-warning-light-2;
+}
+
+.mrz-bg-danger-light-1 {
+    background-color: $mrz-danger-light-1;
+}
+
+.mrz-bg-danger-light-2 {
+    background-color: $mrz-danger-light-2;
+}
+
+// 基础色调边框颜色样式
+.mrz-border-white {
+    border-color: $mrz-white;
+}
+
+.mrz-border-gray{
+    border-color: $mrz-gray;
+}
+
+.mrz-border-black {
+    border-color: $mrz-black;
+}
+
+.mrz-border-primary {
+    border-color: $mrz-primary;
+}
+
+.mrz-border-success {
+    border-color: $mrz-success;
+}
+
+.mrz-border-info {
+    border-color: $mrz-info;
+}
+
+.mrz-border-warning {
+    border-color: $mrz-warning;
+}
+
+.mrz-border-danger {
+    border-color: $mrz-danger;
+}
+
+.mrz-border-primary-light-1 {
+    border-color: $mrz-primary-light-1;
+}
+
+.mrz-border-primary-light-2 {
+    border-color: $mrz-primary-light-2;
+}
+
+.mrz-border-success-light-1 {
+    border-color: $mrz-success-light-1;
+}
+
+.mrz-border-success-light-2 {
+    border-color: $mrz-success-light-2;
+}
+
+.mrz-border-info-light-1 {
+    border-color: $mrz-info-light-1;
+}
+
+.mrz-border-info-light-2 {
+    border-color: $mrz-info-light-2;
+}
+
+.mrz-border-warning-light-1 {
+    border-color: $mrz-warning-light-1;
+}
+
+.mrz-border-warning-light-2 {
+    border-color: $mrz-warning-light-2;
+}
+
+.mrz-border-danger-light-1 {
+    border-color: $mrz-danger-light-1;
+}
+
+.mrz-border-danger-light-2 {
+    border-color: $mrz-danger-light-2;
+}
+
+// 红色调 SCSS 变量定义
+$mrz-light-red: #ffb5b5;    // 浅红
+$mrz-lighter-red: #ff8888;  // 较浅红
+$mrz-normal-red: #f56c6c;   // 普通红
+$mrz-darker-red: #c45656;   // 较深红
+$mrz-dark-red: #933f3f;     // 深红
+
+// 红色调文字颜色样式
+.mrz-text-light-red {
+    color: $mrz-light-red;
+}
+
+.mrz-text-lighter-red {
+    color: $mrz-lighter-red;
+}
+
+.mrz-text-normal-red {
+    color: $mrz-normal-red;
+}
+
+.mrz-text-darker-red {
+    color: $mrz-darker-red;
+}
+
+.mrz-text-dark-red {
+    color: $mrz-dark-red;
+}
+
+// 红色调背景颜色样式
+.mrz-bg-light-red {
+    background-color: $mrz-light-red;
+}
+
+.mrz-bg-lighter-red {
+    background-color: $mrz-lighter-red;
+}
+
+.mrz-bg-normal-red {
+    background-color: $mrz-normal-red;
+}
+
+.mrz-bg-darker-red {
+    background-color: $mrz-darker-red;
+}
+
+.mrz-bg-dark-red {
+    background-color: $mrz-dark-red;
+}
+
+// 红色调边框颜色样式
+.mrz-border-light-red {
+    border-color: $mrz-light-red;
+}
+
+.mrz-border-lighter-red {
+    border-color: $mrz-lighter-red;
+}
+
+.mrz-border-normal-red {
+    border-color: $mrz-normal-red;
+}
+
+.mrz-border-darker-red {
+    border-color: $mrz-darker-red;
+}
+
+.mrz-border-dark-red {
+    border-color: $mrz-dark-red;
+}
+
+// 橙色调 SCSS 变量定义
+$mrz-light-orange: #ffd4a5;     // 浅橙
+$mrz-lighter-orange: #ffaa4c;   // 较浅橙
+$mrz-normal-orange: #e6a23c;    // 普通橙
+$mrz-darker-orange: #b88230;    // 较深橙
+$mrz-dark-orange: #8a6224;      // 深橙
+
+// 橙色调文字颜色样式
+.mrz-text-light-orange {
+    color: $mrz-light-orange;
+}
+
+.mrz-text-lighter-orange {
+    color: $mrz-lighter-orange;
+}
+
+.mrz-text-normal-orange {
+    color: $mrz-normal-orange;
+}
+
+.mrz-text-darker-orange {
+    color: $mrz-darker-orange;
+}
+
+.mrz-text-dark-orange {
+    color: $mrz-dark-orange;
+}
+
+// 橙色调背景颜色样式
+.mrz-bg-light-orange {
+    background-color: $mrz-light-orange;
+}
+
+.mrz-bg-lighter-orange {
+    background-color: $mrz-lighter-orange;
+}
+
+.mrz-bg-normal-orange {
+    background-color: $mrz-normal-orange;
+}
+
+.mrz-bg-darker-orange {
+    background-color: $mrz-darker-orange;
+}
+
+.mrz-bg-dark-orange {
+    background-color: $mrz-dark-orange;
+}
+
+// 橙色调边框颜色样式
+.mrz-border-light-orange {
+    border-color: $mrz-light-orange;
+}
+
+.mrz-border-lighter-orange {
+    border-color: $mrz-lighter-orange;
+}
+
+.mrz-border-normal-orange {
+    border-color: $mrz-normal-orange;
+}
+
+.mrz-border-darker-orange {
+    border-color: $mrz-darker-orange;
+}
+
+.mrz-border-dark-orange {
+    border-color: $mrz-dark-orange;
+}
+
+// 黄色调SCSS 变量定义
+$mrz-light-yellow: #fff2b5;     // 浅黄
+$mrz-lighter-yellow: #ffe888;   // 较浅黄
+$mrz-normal-yellow: #ffd700;    // 普通黄
+$mrz-darker-yellow: #ccb000;    // 较深黄
+$mrz-dark-yellow: #997a00;      // 深黄
+
+// 黄色调文字颜色样式
+.mrz-text-light-yellow {
+    color: $mrz-light-yellow;
+}
+
+.mrz-text-lighter-yellow {
+    color: $mrz-lighter-yellow;
+}
+
+.mrz-text-normal-yellow {
+    color: $mrz-normal-yellow;
+}
+
+.mrz-text-darker-yellow {
+    color: $mrz-darker-yellow;
+}
+
+.mrz-text-dark-yellow {
+    color: $mrz-dark-yellow;
+}
+
+// 黄色调背景颜色样式
+.mrz-bg-light-yellow {
+    background-color: $mrz-light-yellow;
+}
+
+.mrz-bg-lighter-yellow {
+    background-color: $mrz-lighter-yellow;
+}
+
+.mrz-bg-normal-yellow {
+    background-color: $mrz-normal-yellow;
+}
+
+.mrz-bg-darker-yellow {
+    background-color: $mrz-darker-yellow;
+}
+
+.mrz-bg-dark-yellow {
+    background-color: $mrz-dark-yellow;
+}
+
+// 黄色调边框颜色样式
+.mrz-border-light-yellow {
+    border-color: $mrz-light-yellow;
+}
+
+.mrz-border-lighter-yellow {
+    border-color: $mrz-lighter-yellow;
+}
+
+.mrz-border-normal-yellow {
+    border-color: $mrz-normal-yellow;
+}
+
+.mrz-border-darker-yellow {
+    border-color: $mrz-darker-yellow;
+}
+
+.mrz-border-dark-yellow {
+    border-color: $mrz-dark-yellow;
+}
+
+// 绿色调 SCSS 变量定义
+$mrz-light-green: #b3e19d;      // 浅绿
+$mrz-lighter-green: #95d475;    // 较浅绿
+$mrz-normal-green: #67c23a;     // 普通绿
+$mrz-darker-green: #529b2e;     // 较深绿
+$mrz-dark-green: #3d7422;       // 深绿
+
+// 绿色调文字颜色样式
+.mrz-text-light-green {
+    color: $mrz-light-green;
+}
+
+.mrz-text-lighter-green {
+    color: $mrz-lighter-green;
+}
+
+.mrz-text-normal-green {
+    color: $mrz-normal-green;
+}
+
+.mrz-text-darker-green {
+    color: $mrz-darker-green;
+}
+
+.mrz-text-dark-green {
+    color: $mrz-dark-green;
+}
+
+// 绿色调背景颜色样式
+.mrz-bg-light-green {
+    background-color: $mrz-light-green;
+}
+
+.mrz-bg-lighter-green {
+    background-color: $mrz-lighter-green;
+}
+
+.mrz-bg-normal-green {
+    background-color: $mrz-normal-green;
+}
+
+.mrz-bg-darker-green {
+    background-color: $mrz-darker-green;
+}
+
+.mrz-bg-dark-green {
+    background-color: $mrz-dark-green;
+}
+
+// 绿色调边框颜色样式
+.mrz-border-light-green {
+    border-color: $mrz-light-green;
+}
+
+.mrz-border-lighter-green {
+    border-color: $mrz-lighter-green;
+}
+
+.mrz-border-normal-green {
+    border-color: $mrz-normal-green;
+}
+
+.mrz-border-darker-green {
+    border-color: $mrz-darker-green;
+}
+
+.mrz-border-dark-green {
+    border-color: $mrz-dark-green;
+}
+
+// 青色调 SCSS 变量定义
+$mrz-light-cyan: #a6e6e6;   // 浅青
+$mrz-lighter-cyan: #79d5d5; // 较浅青
+$mrz-normal-cyan: #4ac3c3;  // 普通青
+$mrz-darker-cyan: #3a9b9b;  // 较深青
+$mrz-dark-cyan: #2a7474;    // 深青
+
+// 青色调文字颜色样式
+.mrz-text-light-cyan {
+    color: $mrz-light-cyan;
+}
+
+.mrz-text-lighter-cyan {
+    color: $mrz-lighter-cyan;
+}
+
+.mrz-text-normal-cyan {
+    color: $mrz-normal-cyan;
+}
+
+.mrz-text-darker-cyan {
+    color: $mrz-darker-cyan;
+}
+
+.mrz-text-dark-cyan {
+    color: $mrz-dark-cyan;
+}
+
+// 青色调背景颜色样式
+.mrz-bg-light-cyan {
+    background-color: $mrz-light-cyan;
+}
+
+.mrz-bg-lighter-cyan {
+    background-color: $mrz-lighter-cyan;
+}
+
+.mrz-bg-normal-cyan {
+    background-color: $mrz-normal-cyan;
+}
+
+.mrz-bg-darker-cyan {
+    background-color: $mrz-darker-cyan;
+}
+
+.mrz-bg-dark-cyan {
+    background-color: $mrz-dark-cyan;
+}
+
+// 青色调边框颜色样式
+.mrz-border-light-cyan {
+    border-color: $mrz-light-cyan;
+}
+
+.mrz-border-lighter-cyan {
+    border-color: $mrz-lighter-cyan;
+}
+
+.mrz-border-normal-cyan {
+    border-color: $mrz-normal-cyan;
+}
+
+.mrz-border-darker-cyan {
+    border-color: $mrz-darker-cyan;
+}
+
+.mrz-border-dark-cyan {
+    border-color: $mrz-dark-cyan;
+}
+
+// 蓝色调SCSS 变量定义
+$mrz-light-blue: #a6d5ff;   // 浅蓝
+$mrz-lighter-blue: #79bbff; // 较浅蓝
+$mrz-normal-blue: #409eff;  // 普通蓝
+$mrz-darker-blue: #337ecc;  // 较深蓝
+$mrz-dark-blue: #1e63b3;    // 深蓝
+
+// 蓝色调文字颜色样式
+.mrz-text-light-blue {
+    color: $mrz-light-blue;
+}
+
+.mrz-text-lighter-blue {
+    color: $mrz-lighter-blue;
+}
+
+.mrz-text-normal-blue {
+    color: $mrz-normal-blue;
+}
+
+.mrz-text-darker-blue {
+    color: $mrz-darker-blue;
+}
+
+.mrz-text-dark-blue {
+    color: $mrz-dark-blue;
+}
+
+// 蓝色调背景颜色样式
+.mrz-bg-light-blue {
+    background-color: $mrz-light-blue;
+}
+
+.mrz-bg-lighter-blue {
+    background-color: $mrz-lighter-blue;
+}
+
+.mrz-bg-normal-blue {
+    background-color: $mrz-normal-blue;
+}
+
+.mrz-bg-darker-blue {
+    background-color: $mrz-darker-blue;
+}
+
+.mrz-bg-dark-blue {
+    background-color: $mrz-dark-blue;
+}
+
+// 蓝色调边框颜色样式
+.mrz-border-light-blue {
+    border-color: $mrz-light-blue;
+}
+
+.mrz-border-lighter-blue {
+    border-color: $mrz-lighter-blue;
+}
+
+.mrz-border-normal-blue {
+    border-color: $mrz-normal-blue;
+}
+
+.mrz-border-darker-blue {
+    border-color: $mrz-darker-blue;
+}
+
+.mrz-border-dark-blue {
+    border-color: $mrz-dark-blue;
+}
+
+// 紫色调SCSS 变量定义
+$mrz-light-purple: #d9b3ff;     // 浅紫
+$mrz-lighter-purple: #b388ff;   // 较浅紫
+$mrz-normal-purple: #8a2be2;    // 普通紫
+$mrz-darker-purple: #6a1b9a;    // 较深紫
+$mrz-dark-purple: #4a148c;      // 深紫
+
+// 紫色调文字颜色样式
+.mrz-text-light-purple {
+    color: $mrz-light-purple;
+}
+
+.mrz-text-lighter-purple {
+    color: $mrz-lighter-purple;
+}
+
+.mrz-text-normal-purple {
+    color: $mrz-normal-purple;
+}
+
+.mrz-text-darker-purple {
+    color: $mrz-darker-purple;
+}
+
+.mrz-text-dark-purple {
+    color: $mrz-dark-purple;
+}
+
+// 紫色调背景颜色样式
+.mrz-bg-light-purple {
+    background-color: $mrz-light-purple;
+}
+
+.mrz-bg-lighter-purple {
+    background-color: $mrz-lighter-purple;
+}
+
+.mrz-bg-normal-purple {
+    background-color: $mrz-normal-purple;
+}
+
+.mrz-bg-darker-purple {
+    background-color: $mrz-darker-purple;
+}
+
+.mrz-bg-dark-purple {
+    background-color: $mrz-dark-purple;
+}
+
+// 紫色调边框颜色样式
+.mrz-border-light-purple {
+    border-color: $mrz-light-purple;
+}
+
+.mrz-border-lighter-purple {
+    border-color: $mrz-lighter-purple;
+}
+
+.mrz-border-normal-purple {
+    border-color: $mrz-normal-purple;
+}
+
+.mrz-border-darker-purple {
+    border-color: $mrz-darker-purple;
+}
+
+.mrz-border-dark-purple {
+    border-color: $mrz-dark-purple;
+}

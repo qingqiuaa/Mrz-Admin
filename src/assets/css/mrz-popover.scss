@@ -1,0 +1,550 @@
+// 弹出框
+.mrz-dialog {
+  width: 20%;
+  border-radius: 10px !important;
+  background-color: #ffffff !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
+  padding: 10px 20px;
+
+  // 对话框头部
+  .el-dialog__header {
+    padding: 15px !important;
+    border-bottom: 2px solid #4A90E2 !important;
+  }
+
+  // 对话框标题
+  .el-dialog__title {
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    color: #333 !important;
+    padding-left: 10px !important;
+    border-left: 4px solid #4A90E2 !important;
+  }
+
+  // 对话框主体
+  .el-dialog__body {
+    padding: 15px !important;
+  }
+
+  // 对话框超小宽度
+  .mrz-w1 {
+    width: 20%;
+  }
+
+  // 对话框小宽度
+  .mrz-w2 {
+    width: 40%;
+  }
+
+  // 对话框中等宽度
+  .mrz-w3 {
+    width: 60%;
+  }
+
+  // 对话框大宽度
+  .mrz-w4 {
+    width: 80%;
+  }
+
+  // 对话框超大宽度
+  .mrz-w5 {
+    width: 90%;
+  }
+
+  @media (max-width: 768px) {
+    width: 90%;
+    .mrz-w1, .mrz-w2, .mrz-w3, .mrz-w4, .mrz-w5 {
+      width: 90%;
+    }
+  }
+}
+
+// 对话框内容
+.mrz-dialog-content {
+  display: flex;
+  padding-bottom: 10px;
+}
+
+// 对话框按钮组
+.mrz-dialog-button {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+// 通用弹出框样式
+.el-popover {
+  &.mrz-popper-1, &.mrz-popper-2 {
+    // 标题样式
+    .el-popover__title {
+      color: inherit !important;
+    }
+  }
+}
+
+// 弹出框风格1
+.el-popover.mrz-popper-1 {
+  background-color: #4A90E2;
+  border-color: #4A90E2;
+  color: #FFFFFF !important;
+
+  // 风格1上箭头
+  &[x-placement^="top"] .popper__arrow::after {
+    border-top-color: #4A90E2 !important;
+  }
+
+  // 风格1下箭头
+  &[x-placement^="bottom"] .popper__arrow::after {
+    border-bottom-color: #4A90E2 !important;
+  }
+
+  // 风格1左箭头
+  &[x-placement^="left"] .popper__arrow::after {
+    border-left-color: #4A90E2 !important;
+  }
+
+  // 风格1右箭头
+  &[x-placement^="right"] .popper__arrow::after {
+    border-right-color: #4A90E2 !important;
+  }
+
+  // 成功风格1
+  &.mrz-success {
+    background-color: #5DBD84;
+    border-color: #5DBD84;
+
+    // 成功风格1上箭头
+    &[x-placement^="top"] .popper__arrow::after {
+      border-top-color: #5DBD84 !important;
+    }
+
+    // 成功风格1下箭头
+    &[x-placement^="bottom"] .popper__arrow::after {
+      border-bottom-color: #5DBD84 !important;
+    }
+
+    // 成功风格1左箭头
+    &[x-placement^="left"] .popper__arrow::after {
+      border-left-color: #5DBD84 !important;
+    }
+
+    // 成功风格1右箭头
+    &[x-placement^="right"] .popper__arrow::after {
+      border-right-color: #5DBD84 !important;
+    }
+  }
+
+  // 消息风格1
+  &.mrz-info {
+    background-color: #56CFE1;
+    border-color: #56CFE1;
+
+    // 消息风格1上箭头
+    &[x-placement^="top"] .popper__arrow::after {
+      border-top-color: #56CFE1 !important;
+    }
+
+    // 消息风格1下箭头
+    &[x-placement^="bottom"] .popper__arrow::after {
+      border-bottom-color: #56CFE1 !important;
+    }
+
+    // 消息风格1左箭头
+    &[x-placement^="left"] .popper__arrow::after {
+      border-left-color: #56CFE1 !important;
+    }
+
+    // 消息风格1右箭头
+    &[x-placement^="right"] .popper__arrow::after {
+      border-right-color: #56CFE1 !important;
+    }
+  }
+
+  // 警告风格1
+  &.mrz-warning {
+    background-color: #FFAA4C;
+    border-color: #FFAA4C;
+
+    // 警告风格1上箭头
+    &[x-placement^="top"] .popper__arrow::after {
+      border-top-color: #FFAA4C !important;
+    }
+
+    // 警告风格1下箭头
+    &[x-placement^="bottom"] .popper__arrow::after {
+      border-bottom-color: #FFAA4C !important;
+    }
+
+    // 警告风格1左箭头
+    &[x-placement^="left"] .popper__arrow::after {
+      border-left-color: #FFAA4C !important;
+    }
+
+    // 警告风格2右箭头
+    &[x-placement^="right"] .popper__arrow::after {
+      border-right-color: #FFAA4C !important;
+    }
+  }
+
+  // 危险风格1
+  &.mrz-danger {
+    background-color: #FF6B6B;
+    border-color: #FF6B6B;
+
+    // 警告风格1上箭头
+    &[x-placement^="top"] .popper__arrow::after {
+      border-top-color: #FF6B6B !important;
+    }
+
+    // 警告风格1下箭头
+    &[x-placement^="bottom"] .popper__arrow::after {
+      border-bottom-color: #FF6B6B !important;
+    }
+
+    // 警告风格2左箭头
+    &[x-placement^="left"] .popper__arrow::after {
+      border-left-color: #FF6B6B !important;
+    }
+
+    // 警告疯狗2右箭头
+    &[x-placement^="right"] .popper__arrow::after {
+      border-right-color: #FF6B6B !important;
+    }
+  }
+}
+
+// 弹出框风格2
+.el-popover.mrz-popper-2 {
+  background-color: #ECF5FF;
+  border-color: #ECF5FF;
+  color: #A0CFFF !important;
+
+  // 风格2上箭头
+  &[x-placement^="top"] .popper__arrow::after {
+    border-top-color: #ECF5FF !important;
+  }
+
+  // 风格2下箭头
+  &[x-placement^="bottom"] .popper__arrow::after {
+    border-bottom-color: #ECF5FF !important;
+  }
+
+  // 风格2左箭头
+  &[x-placement^="left"] .popper__arrow::after {
+    border-left-color: #ECF5FF !important;
+  }
+
+  // 风格2右箭头
+  &[x-placement^="right"] .popper__arrow::after {
+    border-right-color: #ECF5FF !important;
+  }
+
+  // 成功风格2
+  &.mrz-success {
+    background-color: #F0F9EB;
+    border-color: #F0F9EB;
+    color: #B3E19D !important;
+
+    // 成功风格2上箭头
+    &[x-placement^="top"] .popper__arrow::after {
+      border-top-color: #F0F9EB !important;
+    }
+
+    // 成功风格2下箭头
+    &[x-placement^="bottom"] .popper__arrow::after {
+      border-bottom-color: #F0F9EB !important;
+    }
+
+    // 成功风格2左箭头
+    &[x-placement^="left"] .popper__arrow::after {
+      border-left-color: #F0F9EB !important;
+    }
+
+    // 成功风格2右箭头
+    &[x-placement^="right"] .popper__arrow::after {
+      border-right-color: #F0F9EB !important;
+    }
+  }
+
+  // 消息风格2
+  &.mrz-info {
+    background-color: #F4F4F5;
+    border-color: #F4F4F5;
+    color: #BCBEC2 !important;
+
+    // 消息风格2上箭头
+    &[x-placement^="top"] .popper__arrow::after {
+      border-top-color: #F4F4F5 !important;
+    }
+
+    // 消息风格2下箭头
+    &[x-placement^="bottom"] .popper__arrow::after {
+      border-bottom-color: #F4F4F5 !important;
+    }
+
+    // 消息风格2左箭头
+    &[x-placement^="left"] .popper__arrow::after {
+      border-left-color: #F4F4F5 !important;
+    }
+
+    // 消息风格2右箭头
+    &[x-placement^="right"] .popper__arrow::after {
+      border-right-color: #F4F4F5 !important;
+    }
+  }
+
+  // 警告风格2
+  &.mrz-warning {
+    background-color: #FEF6EC;
+    border-color: #FEF6EC;
+    color: #F0C78A !important;
+
+    // 警告风格2上箭头
+    &[x-placement^="top"] .popper__arrow::after {
+      border-top-color: #FEF6EC !important;
+    }
+
+    // 警告风格2下箭头
+    &[x-placement^="bottom"] .popper__arrow::after {
+      border-bottom-color: #FEF6EC !important;
+    }
+
+    // 警告风格2左箭头
+    &[x-placement^="left"] .popper__arrow::after {
+      border-left-color: #FEF6EC !important;
+    }
+
+    // 警告风格2右箭头
+    &[x-placement^="right"] .popper__arrow::after {
+      border-right-color: #FEF6EC !important;
+    }
+  }
+
+  // 危险风格2
+  &.mrz-danger {
+    background-color: #FEF0F0;
+    border-color: #FEF0F0;
+    color: #FAB6B6 !important;
+
+    // 危险风格2上箭头
+    &[x-placement^="top"] .popper__arrow::after {
+      border-top-color: #FEF0F0 !important;
+    }
+
+    // 危险风格2下箭头
+    &[x-placement^="bottom"] .popper__arrow::after {
+      border-bottom-color: #FEF0F0 !important;
+    }
+
+    // 危险风格2左箭头
+    &[x-placement^="left"] .popper__arrow::after {
+      border-left-color: #FEF0F0 !important;
+    }
+
+    // 危险风格2右箭头
+    &[x-placement^="right"] .popper__arrow::after {
+      border-right-color: #FEF0F0 !important;
+    }
+  }
+}
+
+// 确认框风格1
+.mrz-confirm-1 {
+  // 图标
+  .el-icon-info {
+    color: #4A90E2 !important;
+  }
+
+  // 确认按钮
+  .el-button--primary {
+    background-color: #4A90E2 !important;
+    border-color: #4A90E2 !important;
+    color: #FFFFFF !important;
+  }
+
+  // 取消按钮
+  .el-button--text{
+    color: #4A90E2 !important;
+  }
+
+  // 成功风格1
+  &.mrz-success{
+    // 图标
+    .el-icon-success {
+      color: #5DBD84 !important;
+    }
+
+    // 确认按钮
+    .el-button--primary {
+      background-color: #5DBD84 !important;
+      border-color: #5DBD84 !important;
+      color: #FFFFFF !important;
+    }
+
+    // 取消按钮
+    .el-button--text{
+      color: #5DBD84 !important;
+    }
+  }
+
+  // 消息风格1
+  &.mrz-info{
+    // 图标
+    .el-icon-info {
+      color: #56CFE1 !important;
+    }
+
+    // 确认按钮
+    .el-button--primary {
+      background-color: #56CFE1 !important;
+      border-color: #56CFE1 !important;
+      color: #FFFFFF !important;
+    }
+
+    // 取消按钮
+    .el-button--text{
+      color: #56CFE1 !important;
+    }
+  }
+
+  // 警告风格1
+  &.mrz-warning{
+    // 图标
+    .el-icon-warning {
+      color: #FFAA4C !important;
+    }
+
+    // 确认按钮
+    .el-button--primary {
+      background-color: #FFAA4C !important;
+      border-color: #FFAA4C !important;
+      color: #FFFFFF !important;
+    }
+
+    // 取消按钮
+    .el-button--text{
+      color: #FFAA4C !important;
+    }
+  }
+
+  // 危险风格1
+  &.mrz-danger{
+    // 图标
+    .el-icon-error {
+      color: #FF6B6B !important;
+    }
+
+    // 确认按钮
+    .el-button--primary {
+      background-color: #FF6B6B !important;
+      border-color: #FF6B6B !important;
+      color: #FFFFFF !important;
+    }
+
+    // 取消按钮
+    .el-button--text{
+      color: #FF6B6B !important;
+    }
+  }
+}
+
+// 确认框风格2
+.mrz-confirm-2 {
+  // 图标
+  .el-icon-info {
+    color: #A0CFFF !important;
+  }
+
+  // 确认按钮
+  .el-button--primary {
+    background-color: #ECF5FF !important;
+    border-color: #ECF5FF !important;
+    color: #A0CFFF !important;
+  }
+
+  // 取消按钮
+  .el-button--text{
+    color: #A0CFFF !important;
+  }
+
+  // 成功风格2
+  &.mrz-success{
+    // 图标
+    .el-icon-success {
+      color: #B3E19D !important;
+    }
+
+    // 确认按钮
+    .el-button--primary {
+      background-color: #F0F9EB !important;
+      border-color: #F0F9EB !important;
+      color: #B3E19D !important;
+    }
+
+    // 取消按钮
+    .el-button--text{
+      color: #B3E19D !important;
+    }
+  }
+
+  // 消息风格2
+  &.mrz-info{
+    // 图标
+    .el-icon-info {
+      color: #BCBEC2 !important;
+    }
+
+    // 确认按钮
+    .el-button--primary {
+      background-color: #F4F4F5 !important;
+      border-color: #F4F4F5 !important;
+      color: #BCBEC2 !important;
+    }
+
+    // 取消按钮
+    .el-button--text{
+      color: #BCBEC2 !important;
+    }
+  }
+
+  // 警告风格2
+  &.mrz-warning{
+    // 图标
+    .el-icon-warning {
+      color: #F0C78A !important;
+    }
+
+    // 确认按钮
+    .el-button--primary {
+      background-color: #FEF6EC !important;
+      border-color: #FEF6EC !important;
+      color: #F0C78A !important;
+    }
+
+    // 取消按钮
+    .el-button--text{
+      color: #F0C78A !important;
+    }
+  }
+
+  // 危险风格1
+  &.mrz-danger{
+    // 图标
+    .el-icon-error {
+      color: #FAB6B6 !important;
+    }
+
+    // 确认按钮
+    .el-button--primary {
+      background-color: #FEF0F0 !important;
+      border-color: #FEF0F0 !important;
+      color: #FAB6B6 !important;
+    }
+
+    // 取消按钮
+    .el-button--text{
+      color: #FAB6B6 !important;
+    }
+  }
+}

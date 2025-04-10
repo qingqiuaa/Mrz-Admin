@@ -1,0 +1,349 @@
+// 基础分页
+.mrz-paging {
+  overflow-x: hidden;
+
+  @media (max-width: 768px) {
+    overflow-x: auto;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+  }
+
+  /* 上一页按钮 */
+  .btn-prev,
+    /* 下一页按钮 */
+  .btn-next {
+    width: 30px !important;
+    height: 30px !important;
+    line-height: 30px !important;
+    background-color: #DDEEEE !important;
+    border: 1px solid #4A90E2 !important;
+    border-radius: 4px !important;
+
+    &:hover {
+      color: #4A90E2 !important;
+    }
+  }
+
+  /* 数字分页按钮 */
+  .el-pager li {
+    width: 30px !important;
+    height: 30px !important;
+    line-height: 30px !important;
+    background-color: #DDEEEE !important;
+    border: 1px solid #4A90E2 !important;
+    border-radius: 4px !important;
+
+    /* 选中状态 */
+    &.active {
+      background-color: #4A90E2 !important;
+      /* 白色调选中状态 */
+      color: #FFFFFF !important;
+      border-color: #4A90E2 !important;
+      font-weight: bold;
+
+      &:hover {
+        color: #FFFFFF !important;
+      }
+    }
+
+    &:hover {
+      color: #4A90E2 !important;
+    }
+  }
+}
+
+// 无边框分页
+.mrz-paging-noborder {
+  overflow-x: hidden;
+
+  @media (max-width: 768px) {
+    overflow-x: auto;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+  }
+
+  /* 上一页按钮 */
+  .btn-prev,
+    /* 下一页按钮 */
+  .btn-next {
+    width: 30px !important;
+    height: 30px !important;
+    line-height: 30px !important;
+    background-color: #FFFFFF !important;
+    border-radius: 4px !important;
+
+    &:hover {
+      color: #4A90E2 !important;
+    }
+  }
+
+  /* 数字分页按钮 */
+  .el-pager li {
+    width: 30px !important;
+    height: 30px !important;
+    line-height: 30px !important;
+    background-color: #FFFFFF !important;
+    border-radius: 4px !important;
+
+    /* 选中状态 */
+    &.active {
+      background-color: #4A90E2 !important;
+      /* 白色调选中状态 */
+      color: #FFFFFF !important;
+      border-color: #4A90E2 !important;
+      font-weight: bold;
+
+      &:hover {
+        color: #FFFFFF !important;
+      }
+    }
+
+    &:hover {
+      color: #4A90E2 !important;
+    }
+  }
+}
+
+// 圆形分页
+.mrz-paging-circle {
+  overflow-x: hidden;
+
+  @media (max-width: 768px) {
+    overflow-x: auto;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+  }
+
+  /* 上一页按钮 */
+  .btn-prev,
+    /* 下一页按钮 */
+  .btn-next {
+    width: 30px !important;
+    height: 30px !important;
+    line-height: 30px !important;
+    background-color: #DDEEEE !important;
+    border: 1px solid #4A90E2 !important;
+    border-radius: 50% !important;
+
+    &:hover {
+      color: #4A90E2 !important;
+    }
+  }
+
+  /* 数字分页按钮 */
+  .el-pager li {
+    width: 30px !important;
+    height: 30px !important;
+    line-height: 30px !important;
+    background-color: #DDEEEE !important;
+    border: 1px solid #4A90E2 !important;
+    border-radius: 50% !important;
+
+    /* 选中状态 */
+    &.active {
+      background-color: #4A90E2 !important;
+      /* 白色调选中状态 */
+      color: #FFFFFF !important;
+      border-color: #4A90E2 !important;
+      font-weight: bold;
+
+      &:hover {
+        color: #FFFFFF !important;
+      }
+    }
+
+    &:hover {
+      color: #4A90E2 !important;
+    }
+  }
+}
+
+// 圆形无边框分页
+.mrz-paging-circle-noborder {
+  overflow-x: hidden;
+
+  @media (max-width: 768px) {
+    overflow-x: auto;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+  }
+
+  /* 上一页按钮 */
+  .btn-prev,
+    /* 下一页按钮 */
+  .btn-next {
+    width: 30px !important;
+    height: 30px !important;
+    line-height: 30px !important;
+    background-color: #FFFFFF !important;
+    border-radius: 50% !important;
+
+    &:hover {
+      color: #4A90E2 !important;
+    }
+  }
+
+  /* 数字分页按钮 */
+  .el-pager li {
+    width: 30px !important;
+    height: 30px !important;
+    line-height: 30px !important;
+    background-color: #FFFFFF !important;
+    border-radius: 50% !important;
+
+    /* 选中状态 */
+    &.active {
+      background-color: #4A90E2 !important;
+      /* 白色调选中状态 */
+      color: #FFFFFF !important;
+      border-color: #4A90E2 !important;
+      font-weight: bold;
+
+      &:hover {
+        color: #FFFFFF !important;
+      }
+    }
+
+    &:hover {
+      color: #4A90E2 !important;
+    }
+  }
+}
+
+// 无间距分页
+.mrz-paging-nogap {
+  overflow-x: hidden;
+
+  @media (max-width: 768px) {
+    overflow-x: auto;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+  }
+
+  /* 上一页按钮 */
+  .btn-prev {
+    width: 30px !important;
+    height: 30px !important;
+    line-height: 30px !important;
+    background-color: #DDEEEE !important;
+    border: 1px solid #4A90E2 !important;
+    border-radius: 4px !important;
+    margin-right: 0 !important;
+
+    &:hover {
+      color: #4A90E2 !important;
+    }
+  }
+
+  /* 下一页按钮 */
+  .btn-next {
+    width: 30px !important;
+    height: 30px !important;
+    line-height: 30px !important;
+    background-color: #DDEEEE !important;
+    border: 1px solid #4A90E2 !important;
+    border-radius: 4px !important;
+    margin-left: 0 !important;
+
+    &:hover {
+      color: #4A90E2 !important;
+    }
+  }
+
+  /* 数字分页按钮 */
+  .el-pager li {
+    width: 30px !important;
+    height: 30px !important;
+    line-height: 30px !important;
+    background-color: #DDEEEE !important;
+    border: 1px solid #4A90E2 !important;
+    border-radius: 4px !important;
+    margin: 0 !important;
+
+    /* 选中状态 */
+    &.active {
+      background-color: #4A90E2 !important;
+      /* 白色调选中状态 */
+      color: #FFFFFF !important;
+      border-color: #4A90E2 !important;
+      font-weight: bold;
+
+      &:hover {
+        color: #FFFFFF !important;
+      }
+    }
+
+    &:hover {
+      color: #4A90E2 !important;
+    }
+  }
+}
+
+// 圆形无分页样式
+.mrz-paging-circle-nogap {
+  overflow-x: hidden;
+
+  @media (max-width: 768px) {
+    overflow-x: auto;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+  }
+
+  /* 上一页按钮 */
+  .btn-prev {
+    width: 30px !important;
+    height: 30px !important;
+    line-height: 30px !important;
+    background-color: #DDEEEE !important;
+    border: 1px solid #4A90E2 !important;
+    border-radius: 50% !important;
+    margin-right: 0 !important;
+
+    &:hover {
+      color: #4A90E2 !important;
+    }
+  }
+
+  /* 下一页按钮 */
+  .btn-next {
+    width: 30px !important;
+    height: 30px !important;
+    line-height: 30px !important;
+    background-color: #DDEEEE !important;
+    border: 1px solid #4A90E2 !important;
+    border-radius: 50% !important;
+    margin-left: 0 !important;
+
+    &:hover {
+      color: #4A90E2 !important;
+    }
+  }
+
+  /* 数字分页按钮 */
+  .el-pager li {
+    width: 30px !important;
+    height: 30px !important;
+    line-height: 30px !important;
+    background-color: #DDEEEE !important;
+    border: 1px solid #4A90E2 !important;
+    border-radius: 50% !important;
+    margin: 0 !important;
+
+    /* 选中状态 */
+    &.active {
+      background-color: #4A90E2 !important;
+      /* 白色调选中状态 */
+      color: #FFFFFF !important;
+      border-color: #4A90E2 !important;
+      font-weight: bold;
+
+      &:hover {
+        color: #FFFFFF !important;
+      }
+    }
+
+    &:hover {
+      color: #4A90E2 !important;
+    }
+  }
+}

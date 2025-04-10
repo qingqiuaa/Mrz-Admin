@@ -1,0 +1,226 @@
+// 基础进度条样式
+.mrz-progress {
+  &.el-progress {
+    .el-progress-bar__inner {
+      background-color: #4A90E2 !important;
+    }
+
+    .el-progress-bar__innerText {
+      color: #FFFFFF !important;
+    }
+
+    // 条纹进度条
+    &.mrz-striped {
+      .el-progress-bar__inner {
+        background: repeating-linear-gradient(45deg, #A4C7F0, #A4C7F0 10px, #4A90E2 10px, #4A90E2 20px) !important;
+      }
+
+      // 动画条纹
+      &.mrz-animated {
+        .el-progress-bar__inner {
+          height: 100%;
+          background-repeat: repeat;
+          position: relative;
+          overflow: hidden;
+
+          &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200%;
+            height: 100%;
+            background: repeating-linear-gradient(45deg, #A4C7F0, #A4C7F0 10px, #4A90E2 10px, #4A90E2 20px) !important;
+            animation: mrz-progress-animation 10s linear infinite;
+          }
+        }
+      }
+    }
+
+    // 成功色进度条
+    &.mrz-success {
+      .el-progress-bar__inner {
+        background-color: #5DBD84 !important;
+      }
+
+      // 成功色条纹
+      &.mrz-striped {
+        .el-progress-bar__inner {
+          background: repeating-linear-gradient(45deg, #B7E7CB, #B7E7CB 10px, #5DBD84 10px, #5DBD84 20px) !important;
+        }
+
+        // 成功色动画
+        &.mrz-animated {
+          .el-progress-bar__inner {
+            height: 100%;
+            background-repeat: repeat;
+            position: relative;
+            overflow: hidden;
+
+            &::before {
+              content: '';
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 200%;
+              height: 100%;
+              background: repeating-linear-gradient(45deg, #B7E7CB, #B7E7CB 10px, #5DBD84 10px, #5DBD84 20px) !important;
+              animation: mrz-progress-animation 10s linear infinite;
+            }
+          }
+        }
+      }
+    }
+
+    // 信息色进度条
+    &.mrz-info {
+      .el-progress-bar__inner {
+        background-color: #56CFE1 !important;
+      }
+
+      // 信息色条纹
+      &.mrz-striped {
+        .el-progress-bar__inner {
+          background: repeating-linear-gradient(45deg, #AAE7F0, #AAE7F0 10px, #56CFE1 10px, #56CFE1 20px) !important;
+        }
+
+        // 信息色动画
+        &.mrz-animated {
+          .el-progress-bar__inner {
+            height: 100%;
+            background-repeat: repeat;
+            position: relative;
+            overflow: hidden;
+
+            &::before {
+              content: '';
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 200%;
+              height: 100%;
+              background: repeating-linear-gradient(45deg, #AAE7F0, #AAE7F0 10px, #56CFE1 10px, #56CFE1 20px) !important;
+              animation: mrz-progress-animation 10s linear infinite;
+            }
+          }
+        }
+      }
+    }
+
+    // 警告色进度条
+    &.mrz-warning {
+      .el-progress-bar__inner {
+        background-color: #FFAA4C !important;
+      }
+
+      // 警告色条纹
+      &.mrz-striped {
+        .el-progress-bar__inner {
+          background: repeating-linear-gradient(45deg, #FFD4A5, #FFD4A5 10px, #FFAA4C 10px, #FFAA4C 20px) !important;
+        }
+
+        // 警告色动画
+        &.mrz-animated {
+          .el-progress-bar__inner {
+            height: 100%;
+            background-repeat: repeat;
+            position: relative;
+            overflow: hidden;
+
+            &::before {
+              content: '';
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 200%;
+              height: 100%;
+              background: repeating-linear-gradient(45deg, #FFD4A5, #FFD4A5 10px, #FFAA4C 10px, #FFAA4C 20px) !important;
+              animation: mrz-progress-animation 10s linear infinite;
+            }
+          }
+        }
+      }
+    }
+
+    // 危险色进度条
+    &.mrz-danger {
+      .el-progress-bar__inner {
+        background-color: #FF6B6B !important;
+      }
+
+      // 危险色条纹
+      &.mrz-striped {
+        .el-progress-bar__inner {
+          background: repeating-linear-gradient(45deg, #FFB5B5, #FFB5B5 10px, #FF6B6B 10px, #FF6B6B 20px) !important;
+        }
+
+        // 危险色动画
+        &.mrz-animated {
+          .el-progress-bar__inner {
+            height: 100%;
+            background-repeat: repeat;
+            position: relative;
+            overflow: hidden;
+
+            &::before {
+              content: '';
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 200%;
+              height: 100%;
+              background: repeating-linear-gradient(45deg, #FFB5B5, #FFB5B5 10px, #FF6B6B 10px, #FF6B6B 20px) !important;
+              animation: mrz-progress-animation 10s linear infinite;
+            }
+          }
+        }
+      }
+    }
+
+    // 纯黑进度条
+    &.mrz-black {
+      .el-progress-bar__inner {
+        background-color: #000000 !important;
+      }
+
+      // 纯黑条纹
+      &.mrz-striped {
+        .el-progress-bar__inner {
+          background: repeating-linear-gradient(45deg, #DDEEEE, #DDEEEE 10px, #000000 10px, #000000 20px) !important;
+        }
+
+        // 纯黑动画
+        &.mrz-animated {
+          .el-progress-bar__inner {
+            height: 100%;
+            background-repeat: repeat;
+            position: relative;
+            overflow: hidden;
+
+            &::before {
+              content: '';
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 200%;
+              height: 100%;
+              background: repeating-linear-gradient(45deg, #DDEEEE, #DDEEEE 10px, #000000 10px, #000000 20px) !important;
+              animation: mrz-progress-animation 10s linear infinite;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// 定义条纹动画
+@keyframes mrz-progress-animation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+

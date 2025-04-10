@@ -1,0 +1,183 @@
+// 字体大小
+@for $i from 1 through 12 {
+  .mrz-size-#{$i} {
+    font-size: (84px - ($i - 1) * 6);
+    font-weight: bold;
+    color: #333;
+  }
+}
+
+// 基础文字链接
+.mrz-link {
+  color: #4A90E2;
+  text-decoration: none;
+
+  &:hover {
+    color: #3C78C6;
+  }
+
+  // 成功风文字链接
+  &.mrz-success {
+    color: #6FCF97;
+
+    &:hover {
+      color: #5DBD84;
+    }
+  }
+
+  // 消息风文字链接
+  &.mrz-info {
+    color: #56CFE1;
+
+    &:hover {
+      color: #3DBDC6;
+    }
+  }
+
+  // 警告风文字链接
+  &.mrz-warning {
+    color: #FFAA4C;
+
+    &:hover {
+      color: #E6953F;
+    }
+  }
+
+  // 危险风文字链接
+  &.mrz-danger {
+    color: #FF6B6B;
+
+    &:hover {
+      color: #E65A5A;
+    }
+  }
+
+  // 下划线
+  &.mrz-underline {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  // 删除线
+  &.mrz-disabled {
+    cursor: not-allowed;
+    text-decoration: line-through;
+    color:#A0CFFF;
+
+    &:hover {
+      color: #A0CFFF;
+    }
+
+    // 成功风文字链接
+    &.mrz-success {
+      color: #B3E19D;
+
+      &:hover {
+        color: #B3E19D;
+      }
+    }
+
+    // 消息风文字链接
+    &.mrz-info {
+      color: #BCBEC2;
+
+      &:hover {
+        color: #BCBEC2;
+      }
+    }
+
+    // 警告风文字链接
+    &.mrz-warning {
+      color: #FFAA4C;
+
+      &:hover {
+        color: #FFAA4C;
+      }
+    }
+
+    // 危险风文字链接
+    &.mrz-danger {
+      color: #FFB5B5;
+
+      &:hover {
+        color: #FFB5B5;
+      }
+    }
+  }
+}
+
+/* 上划线 */
+.mrz-overline {
+  text-decoration: overline;
+}
+
+/* 下划线 */
+.mrz-underline {
+  text-decoration: underline;
+}
+
+/* 双下划线 */
+.mrz-double {
+  text-decoration: underline double;
+}
+
+/* 虚下划线 */
+.mrz-dashed {
+  text-decoration: underline;
+  text-decoration-style: dashed;
+}
+
+/* 删除线 */
+.mrz-strike {
+  text-decoration: line-through;
+}
+
+/* 下标 */
+.mrz-sub {
+  sub {
+    font-size: 0.8em;
+    vertical-align: sub;
+  }
+}
+
+/* 上标 */
+.mrz-sup {
+  sup {
+    font-size: 0.8em;
+    vertical-align: super;
+  }
+}
+
+/* 波浪线 */
+.mrz-wavy {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+}
+
+/* 斜体 */
+.mrz-italic {
+  font-style: italic;
+}
+
+/* 粗体 */
+.mrz-bold {
+  font-weight: bold;
+}
+
+/* 打字机效果 */
+.mrz-text-typing {
+  font-size: 24px;
+  /* 字体大小 */
+  font-weight: bold;
+  /* 加粗 */
+  overflow: hidden;
+  /* 隐藏多余内容 */
+  border-right: 2px solid #409eff;
+  /* 模拟光标 */
+  white-space: nowrap;
+  /* 禁止换行 */
+  width: 0;
+  /* 初始宽度为 0 */
+  animation: typing 3s steps(20, end), blink-caret 0.75s step-end infinite;
+}

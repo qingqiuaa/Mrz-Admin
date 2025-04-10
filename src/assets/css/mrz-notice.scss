@@ -1,0 +1,431 @@
+// 警告风格1
+.mrz-alert-1 {
+  margin-bottom: 10px;
+
+  &.el-alert {
+    background-color: #4A90E2;
+    color: #FFFFFF;
+
+    .el-icon-close {
+      color: #FFFFFF !important;
+    }
+
+    .el-alert__description {
+      color: #FFFFFF !important;
+    }
+  }
+
+  // 风格1成功样式
+  &.mrz-success {
+    &.el-alert {
+      background-color: #5DBD84;
+    }
+  }
+
+  // 风格1信息样式
+  &.mrz-info {
+    &.el-alert {
+      background-color: #56CFE1;
+    }
+  }
+
+  // 风格1警告样式
+  &.mrz-warning {
+    &.el-alert {
+      background-color: #FFAA4C;
+    }
+  }
+
+  // 风格1错误样式
+  &.mrz-danger {
+    &.el-alert {
+      background-color: #FF6B6B;
+    }
+  }
+}
+
+// 警告风格2
+.mrz-alert-2 {
+  margin-bottom: 10px;
+
+  &.el-alert {
+    background-color: #ECF5FF;
+    color: #A0CFFF;
+
+    .el-icon-close {
+      color: #C0CDD9 !important;
+    }
+
+    .el-alert__description {
+      color: #A0CFFF !important;
+    }
+  }
+
+  // 风格2成功样式
+  &.mrz-success {
+    &.el-alert {
+      background-color: #F0F9EB;
+      color: #B3E19D;
+
+      .el-alert__description {
+        color: #B3E19D !important;
+      }
+    }
+  }
+
+  // 风格2信息样式
+  &.mrz-info {
+    &.el-alert {
+      background-color: #F4F4F5;
+      color: #BCBEC2;
+
+      .el-alert__description {
+        color: #BCBEC2 !important;
+      }
+    }
+  }
+
+  // 风格2警告样式
+  &.mrz-warning {
+    &.el-alert {
+      background-color: #FEF6EC;
+      color: #F0C78A;
+
+      .el-alert__description {
+        color: #F0C78A !important;
+      }
+    }
+  }
+
+  // 风格2错误样式
+  &.mrz-danger {
+    &.el-alert {
+      background-color: #FEF0F0;
+      color: #FAB6B6;
+
+      .el-alert__description {
+        color: #FAB6B6 !important;
+      }
+    }
+  }
+}
+
+// 信息提示风格1
+.mrz-message-1 {
+  &.el-message {
+    background-color: #4A90E2 !important;
+    border-color: #4A90E2 !important;
+
+    .el-message__icon {
+      color: #FFFFFF !important;
+    }
+
+    .el-message__content {
+      color: #FFFFFF !important;
+    }
+
+    .el-icon-close {
+      color: #FFFFFF !important;
+    }
+  }
+
+  // 风格1成功样式
+  &.mrz-success {
+    &.el-message {
+      background-color: #5DBD84 !important;
+      border-color: #5DBD84 !important;
+    }
+  }
+
+  // 风格1信息样式
+  &.mrz-info {
+    &.el-message {
+      background-color: #56CFE1 !important;
+      border-color: #56CFE1 !important;
+    }
+  }
+
+  // 风格1警告样式
+  &.mrz-warning {
+    &.el-message {
+      background-color: #FFAA4C !important;
+      border-color: #FFAA4C !important;
+    }
+  }
+
+  // 风格1错误样式
+  &.mrz-danger {
+    &.el-message {
+      background-color: #FF6B6B !important;
+      border-color: #FF6B6B !important;
+    }
+  }
+}
+
+// 信息提示风格2
+.mrz-message-2 {
+  &.el-message {
+    background-color: #ECF5FF !important;
+    border-color: #ECF5FF !important;
+
+    .el-message__icon {
+      color: #A0CFFF !important;
+    }
+
+    .el-message__content {
+      color: #A0CFFF !important;
+    }
+
+    .el-icon-close {
+      color: #C0CDD9 !important;
+    }
+  }
+
+  // 风格2成功样式
+  &.mrz-success {
+    &.el-message {
+      background-color: #F0F9EB !important;
+      border-color: #F0F9EB !important;
+
+      .el-message__icon {
+        color: #B3E19D !important;
+      }
+
+      .el-message__content {
+        color: #B3E19D !important;
+      }
+    }
+  }
+
+  // 风格2信息样式
+  &.mrz-info {
+    &.el-message {
+      background-color: #F4F4F5 !important;
+      border-color: #F4F4F5 !important;
+
+      .el-message__icon {
+        color: #BCBEC2 !important;
+      }
+
+      .el-message__content {
+        color: #BCBEC2 !important;
+      }
+    }
+  }
+
+  // 风格2警告样式
+  &.mrz-warning {
+    &.el-message {
+      background-color: #FEF6EC !important;
+      border-color: #FEF6EC !important;
+
+      .el-message__icon {
+        color: #F0C78A !important;
+      }
+
+      .el-message__content {
+        color: #F0C78A !important;
+      }
+    }
+  }
+
+  // 风格2错误样式
+  &.mrz-danger {
+    &.el-message {
+      background-color: #FEF0F0 !important;
+      border-color: #FEF0F0 !important;
+
+      .el-message__icon {
+        color: #FAB6B6 !important;
+      }
+
+      .el-message__content {
+        color: #FAB6B6 !important;
+      }
+    }
+  }
+}
+
+// 风格1通知样式
+.mrz-notify-1 {
+  &.el-notification {
+    background-color: #4A90E2 !important;
+    border-color: #4A90E2 !important;
+
+    .el-icon-success {
+      color: #FFFFFF !important;
+    }
+
+    .el-icon-info {
+      color: #FFFFFF !important;
+    }
+
+    .el-icon-warning{
+      color: #FFFFFF !important;
+    }
+
+    .el-icon-error{
+      color: #FFFFFF !important;
+    }
+
+    .el-notification__group {
+      .el-notification__title {
+        color: #FFFFFF !important;
+      }
+
+      .el-notification__content {
+        color: #FFFFFF !important;
+      }
+
+      .el-icon-close {
+        color: #FFFFFF !important;
+      }
+    }
+  }
+
+  // 风格1成功样式
+  &.mrz-success {
+    &.el-notification {
+      background-color: #5DBD84 !important;
+      border-color: #5DBD84 !important;
+    }
+  }
+
+  // 风格1消息样式
+  &.mrz-info {
+    &.el-notification {
+      background-color: #56CFE1 !important;
+      border-color: #56CFE1 !important;
+    }
+  }
+
+  // 风格1警告样式
+  &.mrz-warning {
+    &.el-notification {
+      background-color: #FFAA4C !important;
+      border-color: #FFAA4C !important;
+    }
+  }
+
+  // 风格1危险样式
+  &.mrz-danger{
+    &.el-notification {
+      background-color: #FF6B6B !important;
+      border-color: #FF6B6B !important;
+    }
+  }
+}
+
+// 风格2通知样式
+.mrz-notify-2 {
+  &.el-notification {
+    background-color: #ECF5FF !important;
+    border-color: #ECF5FF !important;
+
+    .el-icon-info {
+      color: #A0CFFF  !important;
+    }
+
+    .el-notification__group {
+      .el-notification__title {
+        color: #A0CFFF !important;
+      }
+
+      .el-notification__content {
+        color: #A0CFFF !important;
+      }
+
+      .el-icon-close {
+        color: #C0CDD9 !important;
+      }
+    }
+  }
+
+  // 风格2成功样式
+  &.mrz-success {
+    &.el-notification {
+      background-color: #F0F9EB !important;
+      border-color: #F0F9EB !important;
+
+      .el-icon-success {
+        color: #B3E19D !important;
+      }
+
+      .el-notification__group {
+        .el-notification__title {
+          color: #B3E19D !important;
+        }
+
+        .el-notification__content {
+          color: #B3E19D !important;
+        }
+      }
+    }
+  }
+
+  // 风格2消息样式
+  &.mrz-info {
+    &.el-notification {
+      background-color: #F4F4F5 !important;
+      border-color: #F4F4F5 !important;
+    }
+
+    .el-icon-info {
+      color: #BCBEC2 !important;
+    }
+
+    .el-notification__group {
+      .el-notification__title {
+        color: #BCBEC2 !important;
+      }
+
+      .el-notification__content {
+        color: #BCBEC2 !important;
+      }
+    }
+  }
+
+  // 风格1警告样式
+  &.mrz-warning {
+    &.el-notification {
+      background-color: #FEF6EC !important;
+      border-color: #FEF6EC !important;
+    }
+
+    .el-icon-warning {
+      color: #F0C78A !important;
+    }
+
+    .el-notification__group {
+      .el-notification__title {
+        color: #F0C78A !important;
+      }
+
+      .el-notification__content {
+        color: #F0C78A !important;
+      }
+    }
+  }
+
+  // 风格1危险样式
+  &.mrz-danger{
+    &.el-notification {
+      background-color: #FEF0F0 !important;
+      border-color: #FEF0F0 !important;
+    }
+
+    .el-icon-error {
+      color: #FAB6B6 !important;
+    }
+
+    .el-notification__group {
+      .el-notification__title {
+        color: #FAB6B6 !important;
+      }
+
+      .el-notification__content {
+        color: #FAB6B6 !important;
+      }
+    }
+  }
+}

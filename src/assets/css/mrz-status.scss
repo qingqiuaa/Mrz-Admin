@@ -1,0 +1,143 @@
+// 风格1标签
+.mrz-tag-1 {
+  &.el-tag {
+    background-color: #4A90E2;
+    color: #FFFFFF;
+
+    // 成功风格1
+    &.mrz-success {
+      background-color: #5DBD84;
+    }
+
+    // 消息风格1
+    &.mrz-info {
+      background-color: #56CFE1;
+    }
+
+    // 警告风格1
+    &.mrz-warning {
+      background-color: #FFAA4C;
+    }
+
+    // 危险风格1
+    &.mrz-danger {
+      background-color: #FF6B6B;
+    }
+  }
+}
+
+// 风格2标签
+.mrz-tag-2 {
+  &.el-tag {
+    background-color: #ECF5FF;
+    color: #A0CFFF;
+
+    // 成功风格2
+    &.mrz-success {
+      background-color: #F0F9EB;
+      color: #B3E19D;
+    }
+
+    // 消息风格2
+    &.mrz-info {
+      background-color: #F4F4F5;
+      color: #BCBEC2;
+    }
+
+    // 警告风格2
+    &.mrz-warning {
+      background-color: #FEF6EC;
+      color: #F0C78A;
+    }
+
+    // 危险风格2
+    &.mrz-danger {
+      background-color: #FEF0F0;
+      color: #FAB6B6;
+    }
+  }
+}
+
+// 标记风格1
+.mrz-badge-1 {
+  &.el-badge{
+    .el-badge__content {
+      background-color: #4A90E2;
+      color: #FFFFFF;
+    }
+
+    // 成功风格1
+    &.mrz-success {
+      .el-badge__content {
+        background-color: #5DBD84;
+        color: #FFFFFF;
+      }
+    }
+
+    // 消息风格1
+    &.mrz-info {
+      .el-badge__content {
+        background-color: #56CFE1;
+        color: #FFFFFF;
+      }
+    }
+
+    // 警告风格1
+    &.mrz-warning {
+      .el-badge__content {
+        background-color: #FFAA4C;
+        color: #FFFFFF;
+      }
+    }
+
+    // 危险风格1
+    &.mrz-danger {
+      .el-badge__content {
+        background-color: #FF6B6B;
+        color: #FFFFFF;
+      }
+    }
+  }
+}
+
+// 标记风格2
+.mrz-badge-2 {
+  &.el-badge{
+    .el-badge__content {
+      background-color: #ECF5FF;
+      color: #A0CFFF;
+    }
+
+    // 成功风格2
+    &.mrz-success {
+      .el-badge__content {
+        background-color: #F0F9EB;
+        color: #B3E19D;
+      }
+    }
+
+    // 消息风格2
+    &.mrz-info {
+      .el-badge__content {
+        background-color: #F4F4F5;
+        color: #BCBEC2;
+      }
+    }
+
+    // 警告风格2
+    &.mrz-warning {
+      .el-badge__content {
+        background-color: #FEF6EC;
+        color: #F0C78A;
+      }
+    }
+
+    // 危险风格2
+    &.mrz-danger {
+      .el-badge__content {
+        background-color: #FEF0F0;
+        color: #FAB6B6;
+      }
+    }
+  }
+}

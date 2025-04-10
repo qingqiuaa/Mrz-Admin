@@ -1,0 +1,178 @@
+/* 基础表格样式 */
+.mrz-table {
+  /* 去除ElementUI表格自带悬停 */
+  .el-table__body tr:hover > td {
+    background-color: transparent !important;
+  }
+
+  /* 默认悬停效果 */
+  &.mrz-hover {
+    .el-table__body tr:hover > td {
+      background-color: #F5F7FA !important;
+    }
+  }
+
+  /* 悬停基础样式 */
+  @each $theme, $colors in ('red': (#ffaaaa, #ffffff),
+          'green': (#aaffaa, #333333),
+          'blue': (#aaaaff, #ffffff)) {
+    $bg-color: nth($colors, 1);
+    $text-color: nth($colors, 2);
+
+    &.mrz-hover-#{$theme} {
+      .el-table__body tr:hover > td {
+        background-color: $bg-color !important;
+        color: $text-color !important;
+      }
+    }
+  }
+
+  /* 斑马纹样式基类 */
+  &.el-table--striped {
+
+    /* 斑马纹基础样式 */
+    @each $theme, $colors in ('red': (#ffdddd, #ffaaaa),
+            'green': (#ddffdd, #aaffaa),
+            'blue': (#ddddff, #aaaaff)) {
+      &.mrz-striped-#{$theme} {
+        $base: nth($colors, 1);
+        $hover: nth($colors, 2);
+
+        .el-table__body tr.el-table__row--striped {
+
+          /* 基础斑马纹 */
+          td {
+            background-color: $base !important;
+          }
+
+          /* 整行悬停效果 */
+          &:hover {
+            td {
+              background-color: $hover !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* 边框基础样式 */
+  @each $width-theme, $width in ('default': 1px, // 默认边框
+          'small': 2px, // 小增粗边框
+          'normal': 3px, // 普通增粗边框
+          'large': 4px // 大增粗边框
+  ) {
+
+    @each $color-theme, $color in ('red': #ff8888,
+            'green': #88ff88,
+            'blue': #8888ff) {
+      &.mrz-border-#{$width-theme}-#{$color-theme} {
+
+        // 清除ElementUI表格默认边框样式
+        &.el-table--border {
+          border: 0;
+        }
+
+        // 清除ElementUI表格默认边框样式
+        &.el-table::before {
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          height: 0;
+        }
+
+        // 清除ElementUI表格默认边框样式
+        &.el-table--border::after {
+          top: 0;
+          right: 0;
+          width: 0;
+        }
+
+        &.el-table {
+          border-bottom: $width solid $color;
+          border-right: $width solid $color;
+          margin: 0 auto;
+        }
+
+        &.el-table th {
+          border: $width solid $color;
+          border-right: none;
+          border-bottom: none;
+        }
+
+        &.el-table td {
+          border: $width solid $color;
+          border-right: none;
+          border-bottom: none;
+        }
+      }
+    }
+  }
+
+  /* 行高主题配置 */
+  @each $theme-name, $row-height in ('default': 0px,
+          'small': 6px,
+          'normal': 24px,
+          'large': 36px) {
+    &.mrz-height-#{$theme-name} {
+      &.el-table {
+        width: 100%;
+        /* 自动调整列宽 */
+        table-layout: auto;
+      }
+
+      &.el-table td,
+      &.el-table th {
+        padding: $row-height 0;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+// 数据表格头像
+.mrz-avatar-cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  .mrz-avatar-popover {
+    img {
+      max-width: 300px;
+      max-height: 300px;
+    }
+  }
+
+  .mrz-avatar-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+}
+
+// 数据表格状态点
+.mrz-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #4A90E2;
+
+  &.mrz-success {
+    background-color: #5DBD84;
+  }
+
+  &.mrz-info {
+    background-color: #56CFE1;
+  }
+
+  &.mrz-warning {
+    background-color: #FFAA4C;
+  }
+
+  &.mrz-danger {
+    background-color: #FF6B6B;
+  }
+}
